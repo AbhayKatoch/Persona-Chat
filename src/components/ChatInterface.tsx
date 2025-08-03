@@ -148,7 +148,7 @@ export default function ChatInterface({ characterId, onBack }: ChatInterfaceProp
 
     try {
       
-      const response = await fetch("https://personal-back-wwfy.onrender.com/api/chat/", {
+      const response = await fetch("https://api-persona-chat.onrender.com/api/chat/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -184,7 +184,7 @@ export default function ChatInterface({ characterId, onBack }: ChatInterfaceProp
 
   const handleSpeak = async (message: string) => {
     try {
-      const res = await fetch("https://personal-back-wwfy.onrender.com/api/speak/", {
+      const res = await fetch("https://api-persona-chat.onrender.com/api/speak/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -160,7 +160,7 @@ export default function ChatInterface({ characterId, onBack }: ChatInterfaceProp
       });
       
       const data = await response.json();
-      const responseContent = data.response || "Walter is silent... try again.";
+      const responseContent = data.response || "Not able to listen... try again.";
       
       
       const characterMessage: Message = {

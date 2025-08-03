@@ -148,7 +148,7 @@ export default function ChatInterface({ characterId, onBack }: ChatInterfaceProp
 
     try {
       
-      const response = await fetch("https://api-persona-chat.onrender.com/api/chat/", {
+      const response = await fetch("https://personal-back-sigma.vercel.app/api/chat/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
